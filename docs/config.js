@@ -1,11 +1,11 @@
 var CONFIG = {
   title: {
     color: '#05668d',
-    text: 'Interactive organization chart'
+    text: 'GGGI Organization Chart'
   },
   //provide text to display when clicked on the (i) button (you can use HTML). Leave empty if not needed
   information:
-    'Do you see something wrong? Please drop a <em>mail</em> to <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">someone@example.com</a>',
+    'Do you see something wrong? Please drop a <em>mail</em> to <a href="mailto:tb.park@gggi.org?Subject=Hello%20again" target="_top">tb.park@gggi.org</a>',
   photoUrl: {
     prefix: 'photos/',
     suffix: '.png'
@@ -23,7 +23,8 @@ var CONFIG = {
     showNrPeople: true
   },
   enableScreenCapture: true,
-  levelColors: ['#0c058d', '#05668d', '#8d6e05', '#8d2305', '#cfb303'],
+  // levelColors: ['#0c058d', '#05668d', '#8d6e05', '#8d2305', '#cfb303'],
+  levelColors: ['#0c058d', '#ebf9ff', '#8d6e05', '#8d2305', '#cfb303'],
   editCommand: '_edit', //the command to type in the searchbar to switch to edit mode
   dataFields: [{ name: 'Location', type: 'text' }]
 }

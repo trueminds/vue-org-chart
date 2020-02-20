@@ -128,8 +128,8 @@ export default {
 .file {
   display: inline-block;
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 .settings {
 }

@@ -176,7 +176,7 @@ export default {
   border-radius: 30px;
 }
 .active_department {
-  background-color: yellow !important;
+  background-color: rgb(199, 239, 255) !important;
   color: black !important;
 }
 .arrow {

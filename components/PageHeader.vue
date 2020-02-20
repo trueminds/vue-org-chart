@@ -4,8 +4,8 @@
   .updated_info Updated on: {{updatedOn}}
   
   .edit_indicator(v-if="editMode" v-on:click="$store.commit('setEditMode', false)") Click to leave editmode
-  a(href='https://github.com/Hoogkamer/vue-org-chart' target='_blank')
-    img.gh(src="~/assets/img/gh.svg" title='Go to Github project page')
+  a(href='http://www.gggi.org' target='_blank')
+    img.gh(src="~/assets/img/gh.svg" title='Go to GGGI HR DataPresso')
   search-box
   .menu
     file-menu(v-if='editMode')
@@ -94,7 +94,7 @@ function saveAs(uri, filename) {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  position: fixed;
+  position: relative;
   left: 0px;
   top: 0px;
   z-index: 2;

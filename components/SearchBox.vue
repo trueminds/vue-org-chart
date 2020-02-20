@@ -1,6 +1,6 @@
 <template lang='pug'>
   #search_div
-    input.search_input(v-model='searchField' placeholder='Search department or manager...')
+    input.search_input(v-model='searchField' placeholder='Search Unit, department or Supervisor...')
     #search_results(v-if="searchField.length")
       ul
         li(v-if="searchresults.length" v-for="result in searchresults" v-on:click="findDept(result.dept)") 
@@ -113,18 +113,47 @@ export default {
 </script>
 <style scoped>
 #search_div {
-  position: absolute;
+  /* position: absolute;
   top: -10px;
   right: 94px;
   width: 200px;
+  height: 20px; */
+
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 32px !important;
+  white-space: nowrap;
+  box-sizing: content-box;
+  visibility: visible !important;
+  margin-left: 30px;
 }
 .search_input {
-  width: 100%;
+  /* width: 100%;
   border-radius: 3px;
   border: none;
-  box-shadow: inset 0px 2px 5px grey;
   padding: 3px 10px 1px 10px;
-  font-size: 14px;
+  font-size: 18px;     
+  box-shadow: inset 0px 2px 5px grey; */
+
+  display: inline-block;
+  box-sizing: border-box;
+  transition: box-shadow 0.4s ease, background 0.4s ease;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px #cccccc;
+  background: #ffffff !important;
+  padding: 0;
+  padding-right: 26px;
+  padding-left: 32px;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  white-space: normal;
+  font-size: 12px;
+  /* -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; */
 }
 .search_input:focus {
   outline: none;
@@ -140,9 +169,9 @@ export default {
   overflow-x: hidden;
   margin-left: 0px;
   color: grey;
-  font-size: 12px;
+  font-size: 15px;
   box-shadow: 3px 3px 3px grey;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 ul {
   list-style: none;

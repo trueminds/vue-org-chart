@@ -1,7 +1,7 @@
 var CONFIG = {
   title: {
-    color: '#05668d',
-    text: 'Interactive organization chart'
+    color: '#3d3d5c',
+    text: 'GGGI Org Chart'
   },
   //provide text to display when clicked on the (i) button (you can use HTML). Leave empty if not needed
   information:
